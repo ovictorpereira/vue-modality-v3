@@ -97,21 +97,12 @@
 
     <script>
         Vue.createApp({
-            data() {
-                return {
-                    message: 'Hello Vue!'
+            setup () {
+                const modal = (v) => {
+                    console.log(v)
                 }
-            },
-            methods: {
-                modal(name) {
-                    this.$refs[name].open();
-                },
-                okHandle() {
-                    this.loading = true;
-                    setTimeout(() => {
-                        this.loading = false;
-                        this.$refs.loading.hide();
-                    }, 6000);
+                return {
+                    modal
                 }
             }
         }).mount('#app')

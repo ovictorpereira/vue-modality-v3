@@ -1,7 +1,21 @@
 {
   "name": "vue-modality-v3",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "A really nice Vue.js modal component - Compatible with Vue.js 3",
+  "keywords": [
+    "vuemodality",
+    "vuemodalityv3",
+    "modal",
+    "vue",
+    "vue3",
+    "vuejs",
+    "vuejs3",
+    "library",
+    "dialog"
+  ],
+  "author": "Victor Pereira",
+  "license": "MIT",
+  "homepage": "https://github.com/ovictorpereira/vue-modality-v3",
 
   "main": "dist/vue-modality-v3.ssr.js",
   "browser": "dist/vue-modality-v3.esm.js",

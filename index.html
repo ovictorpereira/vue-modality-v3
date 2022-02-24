@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/vue@3"></script>
-    <script src="https://unpkg.com/vue-modality-v3@1.0.0/dist/vue-modality-v3.min.js"></script>
+    <script src="https://unpkg.com/vue-modality-v3-v3@1.0.0/dist/vue-modality-v3-v3.min.js"></script>
     <title>Vue Modality V3</title>
 </head>
 <body>
@@ -17,39 +17,39 @@
             <h1>vue-modality-v3</h1>
             <cite style="margin-bottom: 20px;">A really nice Vue.js modal component. (V3 - Compatible with Vue.js 3)</cite>
 
-            <h5>Check <a href="https://github.com/ovictorpereira/vue-modality-v3">GitHub</a> to see all the props and events</h5>
+            <h5>Check <a href="https://github.com/ovictorpereira/vue-modality-v3-v3">GitHub</a> to see all the props and events</h5>
             <h2>Examples</h2>
 
-            <vue-modality ref="basic" title="Modal" hide-footer centered>
+            <vue-modality-v3 ref="basic" title="Modal" hide-footer centered>
                 Hi, there! I'm a basic modal with no footer
-            </vue-modality>
+            </vue-modality-v3>
 
-            <vue-modality ref="buttons" @ok="$refs.buttons.hide()" @cancel="$refs.buttons.hide()" title="Modal" centered>
+            <vue-modality-v3 ref="buttons" @ok="$refs.buttons.hide()" @cancel="$refs.buttons.hide()" title="Modal" centered>
                 Use the footer buttons to close the modal
-            </vue-modality>
+            </vue-modality-v3>
 
-            <vue-modality ref="error" error title="Error" centered  @ok="$refs.error.hide()" @cancel="$refs.error.hide()">
+            <vue-modality-v3 ref="error" error title="Error" centered  @ok="$refs.error.hide()" @cancel="$refs.error.hide()">
                 Oh! Something went wrong!
-            </vue-modality>
+            </vue-modality-v3>
 
-            <vue-modality ref="success" success title="Success" centered  @ok="$refs.success.hide()" @cancel="$refs.success.hide()">
+            <vue-modality-v3 ref="success" success title="Success" centered  @ok="$refs.success.hide()" @cancel="$refs.success.hide()">
                 That was a success ;)
-            </vue-modality>
+            </vue-modality-v3>
 
-            <vue-modality ref="loading" :ok-loading="loading" @ok="okHandle()" title="Loading" centered @cancel="$refs.success.hide()">
+            <vue-modality-v3 ref="loading" :ok-loading="loading" @ok="okHandle()" title="Loading" centered @cancel="$refs.success.hide()">
                 Click on the OK button
-            </vue-modality>
+            </vue-modality-v3>
 
-            <vue-modality ref="close" no-close-on-backdrop no-close-on-esc hide-cancel title="Use the button" centered  @ok="$refs.close.hide()" @cancel="$refs.close.hide()">
+            <vue-modality-v3 ref="close" no-close-on-backdrop no-close-on-esc hide-cancel title="Use the button" centered  @ok="$refs.close.hide()" @cancel="$refs.close.hide()">
                 Now you can't exit the modal by hiting ESC or clicking outside the box
-            </vue-modality>
+            </vue-modality-v3>
   
             <div class="example">
                 <div class="example-btn">
                     <h3>Basic modal</h3>
                     <button class="btn-example" @click="modal('basic')">Click me</button>
                 </div>
-                <pre class="example-code"><code class="language-html">&lt;vue-modality ref="myRef" title="Modal" hide-footer centered&gt;&#013;  Hi, there! I'm a basic modal with no footer&#013;&lt;/vue-modality&gt;</code></pre>
+                <pre class="example-code"><code class="language-html">&lt;vue-modality-v3 ref="myRef" title="Modal" hide-footer centered&gt;&#013;  Hi, there! I'm a basic modal with no footer&#013;&lt;/vue-modality-v3&gt;</code></pre>
             </div>
     
             <div class="example">
@@ -57,7 +57,7 @@
                     <h3>Footer</h3>
                     <button class="btn-example" @click="modal('buttons')">Click me</button>
                 </div>
-                <pre class="example-code"><code class="language-html">&lt;vue-modality ref="myRef" @ok="$refs.myRef.hide()" @cancel="$refs.myRef.hide()" title="Modal" centered&gt;&#013;  Use the footer buttons to close the modal&#013;&lt;/vue-modality&gt;</code></pre>
+                <pre class="example-code"><code class="language-html">&lt;vue-modality-v3 ref="myRef" @ok="$refs.myRef.hide()" @cancel="$refs.myRef.hide()" title="Modal" centered&gt;&#013;  Use the footer buttons to close the modal&#013;&lt;/vue-modality-v3&gt;</code></pre>
             </div>
     
             <div class="example">
@@ -65,7 +65,7 @@
                     <h3>Error icon</h3>
                     <button class="btn-example" @click="modal('error')">Click me</button>
                 </div>
-                <pre class="example-code"><code class="language-html">&lt;vue-modality ref="myRef" error title="Error" centered  @ok="$refs.myRef.hide()" @cancel="$refs.myRef.hide()"&gt;&#013;  Oh! Something went wrong!&#013;&lt;/vue-modality&gt;</code></pre>
+                <pre class="example-code"><code class="language-html">&lt;vue-modality-v3 ref="myRef" error title="Error" centered  @ok="$refs.myRef.hide()" @cancel="$refs.myRef.hide()"&gt;&#013;  Oh! Something went wrong!&#013;&lt;/vue-modality-v3&gt;</code></pre>
             </div>
     
             <div class="example">
@@ -73,7 +73,7 @@
                     <h3>Success icon</h3>
                     <button class="btn-example" @click="modal('success')">Click me</button>
                 </div>
-                <pre class="example-code"><code class="language-html">&lt;vue-modality ref="myRef" success title="Success" centered  @ok="$refs.myRef.hide()" @cancel="$refs.myRef.hide()"&gt;&#013;  That was a success ;)&#013;&lt;/vue-modality&gt;</code></pre>
+                <pre class="example-code"><code class="language-html">&lt;vue-modality-v3 ref="myRef" success title="Success" centered  @ok="$refs.myRef.hide()" @cancel="$refs.myRef.hide()"&gt;&#013;  That was a success ;)&#013;&lt;/vue-modality-v3&gt;</code></pre>
             </div>    
     
             <div class="example">
@@ -81,7 +81,7 @@
                     <h3>Loading</h3>
                     <button class="btn-example" @click="modal('loading')">Click me</button>
                 </div>
-                <pre class="example-code"><code class="language-html">&lt;vue-modality ref="myRef" :ok-loading="loading" @ok="okHandle()" title="Loading" centered @cancel="$refs.success.hide()"&gt;&#013;  Click on the OK button&#013;&lt;/vue-modality&gt;</code></pre>
+                <pre class="example-code"><code class="language-html">&lt;vue-modality-v3 ref="myRef" :ok-loading="loading" @ok="okHandle()" title="Loading" centered @cancel="$refs.success.hide()"&gt;&#013;  Click on the OK button&#013;&lt;/vue-modality-v3&gt;</code></pre>
             </div>    
     
             <div class="example">
@@ -89,7 +89,7 @@
                     <h3>No close on backdrop</h3>
                     <button class="btn-example" @click="modal('close')">Click me</button>
                 </div>
-                <pre class="example-code"><code class="language-html">&lt;vue-modality ref="myRef" no-close-on-backdrop no-close-on-esc hide-cancel title="Use the button" centered  @ok="$refs.myRef.hide()" @cancel="$refs.myRef.hide()"&gt;&#013;  Now you can't exit the modal by hiting ESC or clicking outside the box&#013;&lt;/vue-modality&gt;</code></pre>
+                <pre class="example-code"><code class="language-html">&lt;vue-modality-v3 ref="myRef" no-close-on-backdrop no-close-on-esc hide-cancel title="Use the button" centered  @ok="$refs.myRef.hide()" @cancel="$refs.myRef.hide()"&gt;&#013;  Now you can't exit the modal by hiting ESC or clicking outside the box&#013;&lt;/vue-modality-v3&gt;</code></pre>
             </div>
             
         </main>
@@ -97,12 +97,21 @@
 
     <script>
         Vue.createApp({
-            setup () {
-                const modal = (v) => {
-                    console.log(v)
-                }
+            data() {
                 return {
-                    modal
+                    message: 'Hello Vue!'
+                }
+            },
+            methods: {
+                modal(name) {
+                    this.$refs[name].open();
+                },
+                okHandle() {
+                    this.loading = true;
+                    setTimeout(() => {
+                        this.loading = false;
+                        this.$refs.loading.hide();
+                    }, 6000);
                 }
             }
         }).mount('#app')

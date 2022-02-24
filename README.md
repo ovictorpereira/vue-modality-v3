@@ -39,7 +39,8 @@ export default {
 ```
 ```js
 // OPTIONS API
-// give your modal a ref and open it by calling inside a method:
+// Inside a method
+// give your modal a ref and open it by calling :
 this.$refs.myRef.open()
 
 // or close it by calling:

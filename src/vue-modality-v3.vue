@@ -375,7 +375,7 @@ export default {
     margin-top: 10px;
 }
 
-.modal-fade-enter,
+.modal-fade-enter-from,
 .modal-fade-leave-active {
     opacity: 0;
 }

@@ -99,7 +99,8 @@
         Vue.createApp({
             data() {
                 return {
-                    message: 'Hello Vue!'
+                    message: 'Hello Vue!',
+                    loading: false
                 }
             },
             methods: {
@@ -114,7 +115,7 @@
                     }, 6000);
                 }
             }
-        }).mount('#app')
+        }).use(VueModalityV3).mount('#app')
     </script>
 
     <script src="prism.js"></script>

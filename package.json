@@ -1,6 +1,6 @@
 {
   "name": "vue-modality-v3",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A really nice Vue.js modal component - Compatible with Vue.js 3",
   "keywords": [
     "vuemodality",
@@ -16,18 +16,15 @@
   "author": "Victor Pereira",
   "license": "MIT",
   "homepage": "https://github.com/ovictorpereira/vue-modality-v3",
-
   "main": "dist/vue-modality-v3.ssr.js",
   "browser": "dist/vue-modality-v3.esm.js",
   "module": "dist/vue-modality-v3.esm.js",
   "unpkg": "dist/vue-modality-v3.min.js",
-
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
   "sideEffects": false,
-
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
     "prebuild": "rimraf ./dist",
@@ -36,10 +33,7 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-
-  "dependencies": {
-  },
-
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
